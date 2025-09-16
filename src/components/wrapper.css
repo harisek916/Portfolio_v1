@@ -1,0 +1,27 @@
+
+.nav-hero-hrs{
+    min-height: 100vh;
+    background-image: url(../assets/images/hero-section-background1.jpg);
+    background-size: cover;        /* scales image to fill screen */
+    background-position: center;   /* keeps image centered */
+    background-repeat: no-repeat;  /* prevent tiling */
+}
+
+
+.logo-hrs {
+  font-size: 1.5rem;
+  font-weight: bold;
+  /* margin-bottom: 1rem; */
+  color: #DC143C;
+  /* color: #B22222; */
+  /* color: #FF7F50; */
+  /* color: #FFBF00; */
+  /* color: #00FFFF; */
+  /* color: #4169E1; */
+  /* color: #00FF00; */
+  /* color: #DA70D6; */
+  /* color: #8A2BE2; */
+  /* color: #3EB489; */
+  /* color: #50C878; */
+
+}

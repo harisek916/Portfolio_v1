@@ -1,0 +1,38 @@
+
+
+body{
+    background-color: #000814;
+    /* background-color: rgba(0, 0, 0, 0.952); */
+    color: white;
+}
+
+/* Crimson */
+.bg-crimson-hrs{
+    background-color: #DC143C;
+}
+
+.border-crimson-hrs{
+    border: 1px solid #DC143C;
+}
+
+.text-crimson-hrs{
+    color: #DC143C;
+}
+
+/* Warm pinkish red */
+
+.bg-warm-pinkish-red-hrs{
+    background-color: #db6c6c;
+}
+.border-warm-pinkish-red-hrs{
+    border: 1px solid #db6c6c;
+}
+.text-warm-pinkish-red-hrs{
+    color: #db6c6c;
+}
+
+
+.btn-hrs{
+
+}
+

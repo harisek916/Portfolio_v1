@@ -1,0 +1,179 @@
+/* Basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar-hrs { 
+  /* background: blue; */
+  width: 100%;
+  color: white;
+  padding: 1rem 2rem;
+  /* padding-inline: 2rem; */
+  position: absolute;
+  top: 0;
+  transition: height 0.5s ease-in, background-color 0.5s ease-in,backInDown 1s ease-in;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.active-navbar-hrs{
+  background-color: rgb(0, 0, 0,1);
+  display: block;
+  margin: 0;
+  /* animation:  0.5s normal; */
+
+}
+
+.navbar-scrolled-hrs{
+  position: fixed;
+  top: 0;
+  background-color: rgb(0, 0, 0,1);
+  transition: height 0.5s ease-in;
+  animation: backInDown 0.5s normal;;
+
+}
+
+.logo-wrapper-hrs{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links-hrs {
+  list-style: none;
+  /* display: none;  */
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0;
+  margin-top: 0.4rem;
+  transition: opacity 1s normal;
+}
+
+.active-nav-links-hrs{
+  opacity: 1;
+  /* background-color: #000000; */
+  width: 100%;
+  
+}
+
+
+.nav-links-hrs a {
+  color: white;
+  position: relative;
+  padding: 5px 0;
+  text-decoration: none;
+
+}
+
+.nav-links-hrs a::after{
+  content:'';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition : transform 0.3s ease-out;
+
+}
+
+.nav-links-hrs a:hover::after {
+  /* border-bottom: 2px solid white; underline appears smoothly */
+  transform: scaleX(1);
+}
+
+
+.menu-icon-hrs {
+  display: block; /* show hamburger on mobile */
+  font-size: 2rem;
+  background-color: transparent;
+  color: white;
+  border: none;
+  /* transition: all 3s ease; */
+}
+.menu-icon-hrs:active {
+  /* transform: scale(1.2); */
+  /* transform: rotate(60deg); */
+}
+.menu-active-hrs{
+  animation: rotate 1s normal;
+}
+
+.menu-inactive-hrs{
+  animation: fadeIn 2s ease-out;
+}
+
+
+
+/* ✅ Larger screens (tablet/desktop) */
+@media (min-width: 769px) {
+  .nav-links-hrs {
+    opacity: 1;
+    display: flex;          /* always show links */
+    flex-direction: row;    /* horizontal layout */
+    position: static;       /* normal flow */
+    background: none;
+    width: auto;
+    padding: 0;
+    border-radius: 0;
+    gap: 1.5rem;
+    max-height: none;       /* remove animation constraint */
+    overflow: visible;
+
+  }
+
+  .navbar-hrs{
+    padding: 1rem 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-icon-hrs {
+    display: none; /* hide hamburger on desktop */
+  }
+
+  /* .active-navbar-hrs{
+  display: flex;
+  margin: 0;
+} */
+}
+
+@keyframes backInDown{
+  0%{transform: translateY(-100px);}
+  100% {transform:translateY(0);}
+}
+
+@keyframes fadeIn{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeOut{
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+
+@keyframes rotate{
+  from {
+    transform: rotate(60deg);
+  }
+  to{
+    transform:rotate(-3deg)
+  }
+
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
