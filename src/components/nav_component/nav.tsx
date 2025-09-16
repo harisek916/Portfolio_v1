@@ -9,16 +9,16 @@ type NavProps = {
 
 export function NavComponent({ name }: NavProps) {
   const [active, setActive] = useState(false);
-  const [isMobile,setIsMobile] = useState(false);
+  // const [isMobile,setIsMobile] = useState(false);
   const [scrolled,setScrolled] = useState(false);
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 768) {
         setActive(false);
-        setIsMobile(false);
+        // setIsMobile(false);
       }
       else{
-        setIsMobile(true);
+        // setIsMobile(true);
       }
     };
     const handleScroll = ()=>{
