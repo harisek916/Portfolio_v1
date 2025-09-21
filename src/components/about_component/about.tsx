@@ -15,7 +15,7 @@ export function AboutComponent() {
         instagram:"mhd_haris"
     }
     return (
-        <div className="about-container-hrs">
+        <section className="about-container-hrs">
             <div className="about-hrs" id="about">
 
                 <div className="about-child-hrs about-img-hrs">
@@ -67,6 +67,6 @@ export function AboutComponent() {
 
 
             </div>
-        </div>
+        </section>
     )
 }

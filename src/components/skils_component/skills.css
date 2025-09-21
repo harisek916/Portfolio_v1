@@ -1,0 +1,19 @@
+.skills-container-hrs{
+    border: 5px solid rgb(222, 32, 32);
+    width: 100%;
+    min-height: 100vh;
+}
+
+.skills-head-hrs{
+    text-align: center;
+    padding:8px ;
+}
+
+.skills-head-hrs:nth-child(1n){
+    margin-bottom: 5px;
+}
+
+
+@media(min-width:769px){
+
+}
