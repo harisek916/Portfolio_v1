@@ -102,10 +102,10 @@ body {
   border: none;
   /* transition: all 3s ease; */
 }
-.menu-icon-hrs:active {
-  /* transform: scale(1.2); */
-  /* transform: rotate(60deg); */
-}
+/* .menu-icon-hrs:active {
+} */
+/* transform: scale(1.2); */
+/* transform: rotate(60deg); */
 .menu-active-hrs{
   animation: rotate 1s normal;
 }
