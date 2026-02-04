@@ -4,4 +4,15 @@ services:
     build: .
     ports:
       - "4000:5173"
+    volumes:
+      - app-data:/app/logs
+    networks:
+      - app-net
 
+
+volumes:
+  app-data:
+
+networks:
+  app-net:
+    driver: bridge
